@@ -1,0 +1,14 @@
+1. npm init -y
+2. npm install prisma typescript ts-node @types/node --save-dev
+3. npx tsc --init
+4. Change `rootDit` to `src` in tsconfig.json
+5. Change `outDir` to `dist`
+6. npx prisma init
+7. Add database url in prisma schema
+8. Generate Migration (npx prisma migrate dev --name "Initialize the schema") do not in quotes
+9. Generate a client (npx prisma generate)
+10. tsc -b
+11. node dist/index.json
+12. To update DB Schema 
+        again run(npx prisma migrate dev --name relationship
+                    npx prisma generate)
